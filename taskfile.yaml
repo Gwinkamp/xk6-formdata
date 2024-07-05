@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  build-xk6:
+    cmd: xk6 build --with xk6-formdata=.
+  run-example:
+    cmd: ./k6 run scripts/example.js
