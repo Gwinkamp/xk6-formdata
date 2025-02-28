@@ -1,7 +1,7 @@
 package formdata
 
 import (
-	"github.com/dop251/goja"
+	"github.com/grafana/sobek"
 	"go.k6.io/k6/js/modules"
 )
 
@@ -13,6 +13,6 @@ type FormData struct{}
 
 // XBuilder creates Builder object
 // following call is used in js: `const builder = new formdata.Builder();`
-func (f *FormData) XBuilder(call goja.ConstructorCall, rt *goja.Runtime) *goja.Object {
+func (f *FormData) XBuilder(call sobek.ConstructorCall, rt *sobek.Runtime) *sobek.Object {
 	return rt.ToValue(NewBuilder()).ToObject(rt)
 }

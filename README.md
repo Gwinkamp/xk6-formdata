@@ -23,7 +23,7 @@ xk6 build --with xk6-formdata=.
 From remote repository:
 
 ```shell
-xk6 build --with github.com/Gwinkamp/xk6-formdata
+xk6 build --with gitverse.ru/gwinkamp/xk6-formdata
 ```
 
 ## Usage
